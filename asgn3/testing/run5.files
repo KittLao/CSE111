@@ -1,0 +1,6 @@
+::::::::::::::::::::::::::::::::
+test3.in
+::::::::::::::::::::::::::::::::
+also ignore blank lines : key not found
+this file contains nonexistent keys : key not found
+all output should be error messages : key not found

@@ -1,0 +1,46 @@
+==15037== Memcheck, a memory error detector
+==15037== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==15037== Using Valgrind-3.14.0.GIT and LibVEX; rerun with -h for copyright info
+==15037== Command: keyvalue test1.in test2.in test3.in
+==15037== 
+::::::::::::::::::::::::::::::::
+test1.in
+::::::::::::::::::::::::::::::::
+this = is a test
+key = value
+a = b
+::::::::::::::::::::::::::::::::
+test2.in
+::::::::::::::::::::::::::::::::
+baz = quux
+f1 = 51
+f2 = 52
+foo = bar
+foobar = baz
+key = value
+second = third
+this = is=a=test
+a
+b
+key
+::::::::::::::::::::::::::::::::
+test3.in
+::::::::::::::::::::::::::::::::
+also ignore blank lines : key not found
+this file contains nonexistent keys : key not found
+all output should be error messages : key not found
+==15037== 
+==15037== HEAP SUMMARY:
+==15037==     in use at exit: 1,163 bytes in 39 blocks
+==15037==   total heap usage: 273,037 allocs, 272,998 frees, 4,755,782 bytes allocated
+==15037== 
+==15037== LEAK SUMMARY:
+==15037==    definitely lost: 64 bytes in 2 blocks
+==15037==    indirectly lost: 1,099 bytes in 37 blocks
+==15037==      possibly lost: 0 bytes in 0 blocks
+==15037==    still reachable: 0 bytes in 0 blocks
+==15037==         suppressed: 0 bytes in 0 blocks
+==15037== Rerun with --leak-check=full to see details of leaked memory
+==15037== 
+==15037== For counts of detected and suppressed errors, rerun with: -v
+==15037== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

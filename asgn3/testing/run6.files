@@ -1,0 +1,26 @@
+::::::::::::::::::::::::::::::::
+test1.in
+::::::::::::::::::::::::::::::::
+this = is a test
+key = value
+a = b
+::::::::::::::::::::::::::::::::
+test2.in
+::::::::::::::::::::::::::::::::
+baz = quux
+f1 = 51
+f2 = 52
+foo = bar
+foobar = baz
+key = value
+second = third
+this = is=a=test
+a
+b
+key
+::::::::::::::::::::::::::::::::
+test3.in
+::::::::::::::::::::::::::::::::
+also ignore blank lines : key not found
+this file contains nonexistent keys : key not found
+all output should be error messages : key not found
