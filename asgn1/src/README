@@ -1,0 +1,6 @@
+Name: Kit Lao
+Date: July 8th, 2019
+Approach: I worked on this individually. Studied how to do elementary school style arithmitec. Made a design document first. 
+Worked on ubigint first, then bigint. Finished whole thing before testing. Most of bugs where on simple things like not 
+implementing the constructor correctly or missing 1 line of code in a function that could make the function work properly.
+
