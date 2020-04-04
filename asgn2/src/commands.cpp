@@ -43,6 +43,7 @@ int exit_status_message() {
    return exit_status;
 }
 
+/* My code begins */
 void print_wordvec (const wordvec& words, const string& delimeter) {
    for (string w : words)
       cout << w << delimeter;
@@ -251,5 +252,6 @@ void fn_rmr (inode_state& state, const wordvec& words){
    if (path.size() == 0) throw command_error ("No path specified");
    rmr_helper(state.cwd->contents, path[0]);
 }
+/* My code ends */
 
 void fn_ignore(inode_state& state, const wordvec& words) {}
