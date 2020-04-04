@@ -1,9 +1,7 @@
 Name: Kit Lao
-Cruz ID: kilao
-Email: kilao@ucsc.edu
+Date: August 13, 2019
 
-
-Description:
-I coded and tested all of this on the Mac computers social science 1, where sections are held.
-When testing, sometimes I have to logout of ssh timeshare and relog in because openGL would
-stop working.
+Files Edited:
+  interp.h
+  interp.cpp
+  main.cpp
